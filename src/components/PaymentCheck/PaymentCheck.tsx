@@ -6,12 +6,12 @@ var PaymentCheck = () => {
     
 
     var paymentData = {
-        price: 100,
-        login: 'testznanio', // TODO:
-        description: 'Description', // TODO:
+        price: 10000,
+        login: '', // TODO:
+        description: '', // TODO:
 
-        password1: 'A6898JsTX6QPPtqpGqKg',
-        password2: 'Cy994dCU1BIXtqVjlz1Y',
+        password1: '',
+        password2: '',
 
         stringForHash() {
             return `${this.login}:${this.price}::${this.password1}`
@@ -33,7 +33,7 @@ var PaymentCheck = () => {
         `SignatureValue=${paymentData.getSign()}`
     )
 
-    console.log(url)
+    // TODO:
 
     return (
         <div>

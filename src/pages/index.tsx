@@ -11,8 +11,8 @@ function Home() {
   return (
     <UserDataContext.Provider value={{userData, setUserData}}>
       {(() => {
-        // if (userData.surveyEnded())
-        return <PaymentCheck />
+        if (userData.surveyEnded())
+          return <PaymentCheck />
         
         
         return userData.authed
