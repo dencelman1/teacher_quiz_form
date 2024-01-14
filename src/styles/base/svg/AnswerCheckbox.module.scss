@@ -1,0 +1,42 @@
+.answerCheckbox {
+    appearance: none;
+    -webkit-appearance: none;
+    border: solid 2px rgb(233, 233, 233);
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: 0.2s all ease;
+
+    border: none;
+    outline: 1px solid gray;
+    
+
+    &:hover {
+        outline: 1px solid #fa4729;
+    }
+    &__checked {
+        outline: 1px solid #fa4729;
+        
+        background-color: #fa4729;
+        position: relative;
+        
+        &:after {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            line-height: 30px   ;
+            text-align: center;
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+            font-weight: 900;
+            box-sizing: border-box;
+            display: block;
+            content: 'center'
+
+        }
+    }
+
+    
+}

@@ -1,0 +1,28 @@
+.authBlock {
+    height: 100%;
+
+
+    &, .authForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    background-color: #EEEEFA;
+
+    .authForm {
+        flex-direction: column;
+        box-shadow: 0 0 20px rgb(213, 213, 213);
+        margin: 0;
+        width: 325px;
+        height: 200px;
+        background-color: white;
+        padding: 30px 30px 50px 30px;
+        border-radius: 10px;
+
+        button {
+            background-color: #FA4729;
+        }
+    }
+
+}

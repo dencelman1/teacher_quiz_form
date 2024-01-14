@@ -1,0 +1,49 @@
+
+.formInput {
+    position: relative;
+    height: fit-content;
+    cursor: text;
+    
+    input {
+        background: none;
+        color: black;
+        font-weight: 100;
+        
+        &:hover {
+            outline: 1px solid #FA4729;
+
+        }
+    }
+    
+    label {
+        pointer-events: none;
+        user-select: none;
+        
+        cursor: text;
+        top: 30%;
+        font-size: 1.2em;
+        padding: 0 5px;
+        left: 20px;
+        
+        position: absolute;
+        transition: .2s top, .2s font-size, .2s background-color;
+        background: none;
+        color: gray;
+        
+    }
+
+    &__filled {
+        label {
+            top: -15%;
+            font-size: 1em;
+            background-color: white;
+            color: #FA4729 !important;
+        }
+    }
+    &__focused {
+        label {
+            color: gray;
+        }
+    }
+    
+}

@@ -1,0 +1,21 @@
+.surveyAnswerOption {
+    margin: 5px 0;
+    background-color: none;
+
+    border-radius: 100px;
+    transition: 0.5s all ease;
+    font-size: 19px;
+    height: 66px;
+    color: rgb(0, 10, 56);
+    font-weight: 500;
+    padding: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: default;
+        
+    &__checked {
+        background-color: #E9E9E9;
+    }
+}
