@@ -6,7 +6,7 @@ var PaymentCheck = () => {
     
 
     var paymentData = {
-        price: 10000,
+        price: 10_000,
         login: '', // TODO:
         description: '', // TODO:
 
