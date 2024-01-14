@@ -2,9 +2,7 @@ import crypto from 'crypto';
 
 
 var PaymentCheck = () => {
-
     
-
     var paymentData = {
         price: 10_000,
         login: '', // TODO:
