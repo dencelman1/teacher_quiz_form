@@ -22,16 +22,21 @@ var PaymentCheck = () => {
             md5Hash.update(this.stringForHash());
 
             return md5Hash.digest('hex');
+        },
+
+        getUrl() {
+            var url = (
+                "https://auth.robokassa.ru/Merchant/Index.aspx?"+
+                `MerchantLogin=${paymentData.login}&`+
+                `OutSum=${paymentData.price}&`+
+                `Description=${paymentData.description}&`+
+                `SignatureValue=${paymentData.getSign()}`
+            )
+            return url
         }
     }
     
-    var url = (
-        "https://auth.robokassa.ru/Merchant/Index.aspx?"+
-        `MerchantLogin=${paymentData.login}&`+
-        `OutSum=${paymentData.price}&`+
-        `Description=${paymentData.description}&`+
-        `SignatureValue=${paymentData.getSign()}`
-    )
+    var url = paymentData.getUrl()
 
     // TODO:
 

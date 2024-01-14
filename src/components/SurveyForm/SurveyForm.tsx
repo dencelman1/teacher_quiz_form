@@ -109,7 +109,7 @@ var SurveyForm = () => {
                 }
                 <button
                     onClick={() => {
-                        if (isLastQuestion) {
+                        if (userData.surveyEnded()) {
                             // TODO: make here to payment
                             return alert(JSON.stringify(
                                 [...userData.answers, userData.currentAnswerIndex]
